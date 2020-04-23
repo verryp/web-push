@@ -18,4 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/push', 'PushController@push')->name('push');
 Route::post('/push', 'PushController@store');
